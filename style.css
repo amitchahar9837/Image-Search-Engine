@@ -19,12 +19,26 @@ body{
     margin: 10px auto;
 }
 .searchContainer{
-    width: 60%;
+    width: 70%;
     margin: 0px auto;
     display: flex;
     background-color: #434989;
     border-radius: 4px;
     overflow: hidden;
+    flex-wrap: wrap;
+}
+@media (max-width:640px) {
+    .searchContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color:transparent;
+    }
+    .searchContainer input{
+        background-color: #434989 !important;
+        width: 80%;
+    }
 }
 .searchContainer input{
     padding: 15px 10px;
