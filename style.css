@@ -70,9 +70,9 @@ body{
 .imageContainer{
     width: 80%;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+    gap: 1.2rem;
 }
 .imageContainer img{
     width: 100%;
